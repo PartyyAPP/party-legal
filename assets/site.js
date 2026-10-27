@@ -65,7 +65,7 @@
     var hero = document.querySelector("[data-hero]");
     var blob = document.querySelector("[data-pointer-blob]");
     var stage = document.querySelector("[data-tilt]");
-    var phone = stage && stage.querySelector(".phone");
+    var phone = stage && stage.querySelector(".fan");
     if (!hero) return;
     var raf = 0, mx = 0, my = 0;
     hero.addEventListener("pointermove", function (e) {
@@ -77,7 +77,7 @@
         if (blob) blob.style.transform = "translate3d(" + (mx - r.left) + "px," + (my - r.top) + "px,0)";
         if (phone) {
           var nx = (mx - r.left) / r.width - 0.5, ny = (my - r.top) / r.height - 0.5;
-          phone.style.transform = "rotateY(" + (-12 + nx * 16) + "deg) rotateX(" + (6 - ny * 10) + "deg) rotateZ(2deg)";
+          phone.style.transform = "rotateY(" + (nx * 14) + "deg) rotateX(" + (-ny * 10) + "deg)";
         }
       });
     });
@@ -86,11 +86,21 @@
 
   /* ---------- Marquee: duplicate the list once for a seamless loop ---------- */
   function initMarquee() {
-    var track = document.querySelector("[data-marquee]");
-    if (!track || track.children.length > 1) return;
-    var clone = track.children[0].cloneNode(true);
-    clone.setAttribute("aria-hidden", "true");
-    track.appendChild(clone);
+    document.querySelectorAll("[data-marquee]").forEach(function (track) {
+      if (track.children.length > 1) return;
+      var clone = track.children[0].cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+  }
+
+  /* ---------- Music pills: tap to light up ---------- */
+  function initVibes() {
+    document.querySelectorAll("[data-vibes] button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true");
+      });
+    });
   }
 
   /* ---------- Reveal on scroll ---------- */
@@ -190,6 +200,7 @@
     safe(initNav, "nav");
     safe(initHeroPointer, "hero");
     safe(initMarquee, "marquee");
+    safe(initVibes, "vibes");
     safe(initReveal, "reveal");
     safe(initStory, "story");
     safe(initCount, "count");
