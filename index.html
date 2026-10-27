@@ -1,104 +1,364 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Partyy · Discotecas y pubs cerca de ti</title>
-<meta name="description" content="Partyy es la app para descubrir discotecas y pubs cerca de ti. Un proyecto de Malaga NightApp, S. Coop. And. (Málaga).">
-<link rel="stylesheet" href="style.css"></head>
-<body><main>
-<nav><a href="#es">Español</a><a href="#en">English</a><a href="#locales">¿Tu local?</a><a href="#aviso-legal">Aviso legal</a></nav>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Party · Discotecas y pubs cerca de ti</title>
+<meta name="description" content="Party es la app gratuita y sin anuncios para decidir dónde salir esta noche: 351 discotecas y pubs en 42 ciudades de España, con horarios, precios, música, edad y cómo llegar.">
+<meta name="theme-color" content="#07050d">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://partyyapp.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Party">
+<meta property="og:url" content="https://partyyapp.com/">
+<meta property="og:title" content="Party · ¿Dónde salimos esta noche?">
+<meta property="og:description" content="351 discotecas y pubs en 42 ciudades de España. Horarios, precios, música, edad y cómo llegar. Gratis y sin anuncios.">
+<meta property="og:image" content="https://partyyapp.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=20261027">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Party: Discotecas y Pubs","operatingSystem":"iOS, Android","applicationCategory":"TravelApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"MALAGA NIGHTAPP, S. COOP. AND.","url":"https://partyyapp.com","email":"contacto@partyyapp.com"}}
+</script>
+<script>document.documentElement.classList.add("js")</script>
+<script defer src="assets/site.js?v=20261027"></script>
+</head>
+<body>
 
-<section id="es">
-<h1>Partyy</h1>
-<p class="meta">¿Dónde salimos esta noche? Discotecas y pubs cerca de ti.</p>
+<a class="skip" href="#main"><span data-l="es">Saltar al contenido</span><span data-l="en">Skip to content</span></a>
 
-<p>Partyy es una app móvil gratuita y sin anuncios para descubrir la vida nocturna. En la tienda aparece como <strong>Party: Discotecas y Pubs</strong>. Reúne más de 350 discotecas y pubs de Málaga, Madrid, Barcelona, Valencia, Sevilla, Ibiza y otras ciudades de España, con la información que necesitas para decidir en segundos.</p>
+<!-- ========== NAV ========== -->
+<header class="nav" data-nav>
+  <a class="nav__brand" href="#top" aria-label="Party">
+    <img src="assets/img/icon-192.webp" alt="" width="34" height="34">
+    <span>Party</span>
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#app"><span data-l="es">La app</span><span data-l="en">The app</span></a>
+    <a href="#ciudades"><span data-l="es">Ciudades</span><span data-l="en">Cities</span></a>
+    <a href="#locales"><span data-l="es">Para locales</span><span data-l="en">For venues</span></a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav__right">
+    <button class="lang" type="button" data-lang-toggle aria-label="Cambiar idioma / Change language">
+      <span class="lang__opt" data-opt="es">ES</span><span class="lang__opt" data-opt="en">EN</span>
+    </button>
+    <a class="btn btn--sm" href="#descargar"><span data-l="es">Descargar</span><span data-l="en">Get the app</span></a>
+  </div>
+</header>
 
-<h2>Qué hace hoy la app</h2>
-<ul>
-<li>Locales ordenados por cercanía (la ubicación se usa solo en tu móvil, no la guardamos).</li>
-<li>Mapa con todos los locales.</li>
-<li>Horarios por día, precios de entrada y bebidas, tipo de música, edad del público, fotos y cómo llegar.</li>
-<li>Filtros por ciudad, tipo de local, música y edad.</li>
-<li>Favoritos, modo claro y oscuro, español e inglés.</li>
-</ul>
+<main id="main">
 
-<h2>Lo que estamos construyendo con IA (Claude)</h2>
-<p>Estamos desarrollando nuevas funciones con <strong>Claude</strong>, el modelo de IA de Anthropic. <strong>Todavía no están disponibles en la app.</strong></p>
-<ul>
-<li><strong>Recomendador de planes:</strong> responde a «¿dónde salgo hoy?» con un plan de noche según tus gustos, tus favoritos, el día y lo que tienes cerca.</li>
-<li><strong>Asistente en la app:</strong> preguntas en lenguaje natural sobre la noche de tu ciudad («un pub tranquilo con música en directo cerca del centro»).</li>
-<li><strong>Fichas de locales y eventos:</strong> Claude redacta y traduce al inglés las descripciones a partir de los datos de cada local, que revisamos antes de publicar.</li>
-<li><strong>Moderación:</strong> revisión de reseñas y fotos cuando abramos la app a contenido de los usuarios.</li>
-</ul>
+<!-- ========== HERO ========== -->
+<section class="hero" id="top" data-hero>
+  <div class="hero__bg" aria-hidden="true">
+    <div class="blob blob--a"></div>
+    <div class="blob blob--b"></div>
+    <div class="blob blob--c" data-pointer-blob></div>
+    <div class="beams"><i></i><i></i><i></i></div>
+    <div class="grain"></div>
+  </div>
 
-<h2>Disponibilidad</h2>
-<p>Próximamente en Google Play y App Store.</p>
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="live"><span class="live__dot"></span><span data-clock><span data-l="es">Ahora mismo</span><span data-l="en">Right now</span></span></p>
+      <h1 class="hero__title">
+        <span class="line"><span data-l="es">¿Dónde salimos</span><span data-l="en">Where are we</span></span>
+        <span class="line"><em class="glow"><span data-l="es">esta noche?</span><span data-l="en">going tonight?</span></em></span>
+      </h1>
+      <p class="hero__lead">
+        <span data-l="es">Las discotecas y pubs que tienes cerca, con horario de hoy, precio, música, edad del público y cómo llegar. Decide en segundos y sal.</span>
+        <span data-l="en">The clubs and bars near you, with tonight's hours, prices, music, crowd age and directions. Decide in seconds and go.</span>
+      </p>
+      <div class="stores" data-stores>
+        <a class="store" data-store="ios" href="#descargar" aria-label="App Store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.74.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.32-3.5zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg>
+          <span class="store__txt"><small><span data-l="es">Muy pronto en</span><span data-l="en">Coming soon to</span></small>App Store</span>
+        </a>
+        <a class="store" data-store="android" href="#descargar" aria-label="Google Play">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.2.2-.3.5-.3.9v17.6c0 .4.1.7.3.9l.1.1 9.9-9.9v-.2L3.7 2.2l-.1.1zm13.3 13.1-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm.1-.1L13.6 12 3.6 22c.4.4 1 .4 1.7 0l11.7-6.7M17 8.7 5.3 2C4.6 1.6 4 1.7 3.6 2.1L13.6 12l3.4-3.3z"/></svg>
+          <span class="store__txt"><small><span data-l="es">Muy pronto en</span><span data-l="en">Coming soon to</span></small>Google Play</span>
+        </a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>351</b> <span data-l="es">locales</span><span data-l="en">venues</span></li>
+        <li><b>42</b> <span data-l="es">ciudades</span><span data-l="en">cities</span></li>
+        <li><b>0 €</b> <span data-l="es">y sin anuncios</span><span data-l="en">and no ads</span></li>
+      </ul>
+    </div>
 
-<h2 id="locales">¿Tu local o tu foto?</h2>
-<p>Recopilamos los datos y las fotos de los locales de fuentes públicas. Si tienes un local o eres el autor de una foto y quieres que corrijamos algo o que la retiremos, escríbenos a <a href="mailto:contacto@partyyapp.com?subject=Corregir%20o%20retirar%20datos%20de%20un%20local">contacto@partyyapp.com</a> con el nombre del local y la foto o el dato. Lo revisamos y, si nos lo pides, lo retiramos en 48 horas como máximo.</p>
-<p>Si tienes un local, también puedes mandarnos fotos oficiales, horarios, precios o el tipo de música, y los publicamos.</p>
+    <div class="hero__stage" data-tilt>
+      <div class="phone phone--hero">
+        <img data-l="es" src="assets/img/es-explore.webp" alt="Pantalla Explorar de Party con locales de Málaga" width="640" height="1391" fetchpriority="high">
+        <img data-l="en" src="assets/img/en-explore.webp" alt="Party Explore screen with venues" width="640" height="1391" loading="lazy">
+      </div>
+      <div class="chip chip--1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 3 3 10.5l7.5 3L13.5 21z"/></svg> 0.1 km</div>
+      <div class="chip chip--2"><span class="chip__dot"></span><span data-l="es">Hoy 22:30 – 6:00</span><span data-l="en">Today 22:30 – 6:00</span></div>
+      <div class="chip chip--3">♫ <span data-l="es">Internacional · 18–25</span><span data-l="en">International · 18–25</span></div>
+    </div>
+  </div>
 
-<h2>Legal</h2>
-<ul>
-<li><a href="privacy.html">Política de privacidad</a></li>
-<li><a href="terms.html">Términos de uso</a></li>
-<li><a href="delete-account.html">Eliminar cuenta</a></li>
-</ul>
+  <a class="scrollhint" href="#app" aria-label="Seguir bajando"><span></span></a>
 </section>
 
-<hr>
-
-<section id="en" lang="en">
-<h1>Partyy</h1>
-<p class="meta">Where are we going tonight? Clubs and bars near you.</p>
-
-<p>Partyy is a free, ad-free mobile app for discovering nightlife. In the stores it's listed as <strong>Party: Discotecas y Pubs</strong>. It covers more than 350 clubs and bars in Málaga, Madrid, Barcelona, Valencia, Seville, Ibiza and other Spanish cities, with everything you need to decide in seconds.</p>
-
-<h2>What the app does today</h2>
-<ul>
-<li>Venues sorted by distance (location is used on your phone only; we don't store it).</li>
-<li>Map with every venue.</li>
-<li>Opening hours per day, entry and drink prices, music style, crowd age, photos and directions.</li>
-<li>Filters by city, venue type, music and age.</li>
-<li>Favorites, light and dark mode, Spanish and English.</li>
-</ul>
-
-<h2>What we're building with AI (Claude)</h2>
-<p>We're developing new features with <strong>Claude</strong>, Anthropic's AI model. <strong>They aren't available in the app yet.</strong></p>
-<ul>
-<li><strong>Night-out planner:</strong> answers "where should I go tonight?" with a plan based on your taste, your favorites, the day and what's nearby.</li>
-<li><strong>In-app assistant:</strong> natural-language questions about your city's nightlife ("a quiet bar with live music near the center").</li>
-<li><strong>Venue and event listings:</strong> Claude drafts and translates venue descriptions from each venue's data; we review them before publishing.</li>
-<li><strong>Moderation:</strong> reviewing user reviews and photos once we open the app to user content.</li>
-</ul>
-
-<h2>Availability</h2>
-<p>Coming soon to Google Play and the App Store.</p>
-
-<h2 id="venues">Your venue or your photo?</h2>
-<p>We collect venue details and photos from public sources. If you own a venue or took one of the photos and want us to correct something or take it down, email <a href="mailto:contacto@partyyapp.com?subject=Correct%20or%20remove%20venue%20details">contacto@partyyapp.com</a> with the venue name and the photo or detail. We'll review it and, if you ask, remove it within 48 hours.</p>
-<p>Venue owners can also send us official photos, opening hours, prices or music style, and we'll publish them.</p>
-
-<h2>Legal</h2>
-<ul>
-<li><a href="privacy.html#en">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Use</a></li>
-<li><a href="delete-account.html">Delete account</a></li>
-</ul>
+<!-- ========== MARQUEE CIUDADES ========== -->
+<section class="marquee" id="ciudades" aria-label="Ciudades">
+  <div class="marquee__track" data-marquee>
+    <ul>
+      <li>Málaga <sup>52</sup></li><li>Madrid <sup>29</sup></li><li>Granada <sup>29</sup></li><li>València <sup>26</sup></li><li>Barcelona <sup>26</sup></li><li>Ibiza <sup>25</sup></li><li>Sevilla <sup>24</sup></li><li>Lloret de Mar <sup>21</sup></li><li>Benidorm <sup>13</sup></li><li>Fuengirola <sup>10</sup></li><li>Las Palmas <sup>10</sup></li><li>Palma <sup>9</sup></li><li>Cádiz <sup>8</sup></li><li>Torremolinos <sup>8</sup></li>
+    </ul>
+  </div>
 </section>
 
-<hr>
+<!-- ========== LA APP (scrollytelling) ========== -->
+<section class="story" id="app">
+  <header class="section-head">
+    <p class="kicker"><span data-l="es">La app</span><span data-l="en">The app</span></p>
+    <h2><span data-l="es">Todo lo que miras antes de salir,<br>en <em>una sola pantalla.</em></span><span data-l="en">Everything you check before going out,<br>on <em>one screen.</em></span></h2>
+  </header>
 
-<section id="aviso-legal">
-<h2>Aviso legal / Legal notice</h2>
-<p>En cumplimiento del artículo 10 de la Ley 34/2002 (LSSI): / Pursuant to article 10 of Spanish Law 34/2002 (LSSI):</p>
-<ul>
-<li><strong>Titular / Owner:</strong> MALAGA NIGHTAPP, S. COOP. AND. (sociedad cooperativa andaluza en constitución / Andalusian cooperative, incorporation in progress)</li>
-<li><strong>NIF (provisional):</strong> F05658919</li>
-<li><strong>Domicilio / Registered address:</strong> Av. Diego Fernández de Mendoza 11, 29010 Málaga, España / Spain</li>
-<li><strong>Email:</strong> <a href="mailto:contacto@partyyapp.com">contacto@partyyapp.com</a></li>
-<li><strong>Constitución / Founded:</strong> asamblea constituyente del 22 de septiembre de 2026 / founding assembly held on 22 September 2026</li>
-<li><strong>Registro / Registry:</strong> inscripción en trámite en el Registro de Cooperativas Andaluzas / registration pending with the Andalusian Cooperatives Registry</li>
-<li><strong>D-U-N-S:</strong> 349717791</li>
-</ul>
+  <div class="story__grid">
+    <div class="story__sticky">
+      <div class="phone phone--story" data-story-phone>
+        <img class="is-on" data-shot="0" src="assets/img/es-explore.webp" data-src-en="assets/img/en-explore.webp" alt="" width="640" height="1391" loading="lazy">
+        <img data-shot="1" src="assets/img/es-detail.webp" alt="" width="640" height="1391" loading="lazy">
+        <img data-shot="2" src="assets/img/es-map.webp" data-src-en="assets/img/en-map.webp" alt="" width="640" height="1391" loading="lazy">
+        <img data-shot="3" src="assets/img/es-favs.webp" data-src-en="assets/img/en-favs.webp" alt="" width="640" height="1391" loading="lazy">
+      </div>
+    </div>
+
+    <ol class="story__steps">
+      <li class="step reveal" data-step="0">
+        <span class="step__n">01</span>
+        <h3><span data-l="es">Lo más cerca, primero</span><span data-l="en">Closest first</span></h3>
+        <p><span data-l="es">Abre la app y verás los locales ordenados por distancia, con la hora y el día. Tu ubicación se queda en tu móvil: no la guardamos.</span><span data-l="en">Open the app and venues are sorted by distance, with today's day and time. Your location stays on your phone: we don't store it.</span></p>
+        <img class="step__shot" src="assets/img/es-explore.webp" data-src-en="assets/img/en-explore.webp" alt="" width="640" height="1391" loading="lazy">
+      </li>
+      <li class="step reveal" data-step="1">
+        <span class="step__n">02</span>
+        <h3><span data-l="es">La ficha que necesitas</span><span data-l="en">The info you need</span></h3>
+        <p><span data-l="es">Música, edad del público, precio de entrada, horario de cada día con el de hoy resaltado y fotos del local. Y un botón: Cómo llegar.</span><span data-l="en">Music, crowd age, entry price, opening hours for every day with today highlighted, and photos. Plus one button: Directions.</span></p>
+        <img class="step__shot" src="assets/img/es-detail.webp" alt="" width="640" height="1391" loading="lazy">
+      </li>
+      <li class="step reveal" data-step="2">
+        <span class="step__n">03</span>
+        <h3><span data-l="es">El mapa de la noche</span><span data-l="en">The night on a map</span></h3>
+        <p><span data-l="es">Todos los locales de la zona en el mapa. Toca uno y ábrelo. Ideal para enlazar un pub con la discoteca de después.</span><span data-l="en">Every venue around you on the map. Tap one to open it. Perfect for lining up a bar before the club.</span></p>
+        <img class="step__shot" src="assets/img/es-map.webp" data-src-en="assets/img/en-map.webp" alt="" width="640" height="1391" loading="lazy">
+      </li>
+      <li class="step reveal" data-step="3">
+        <span class="step__n">04</span>
+        <h3><span data-l="es">Tus sitios, a mano</span><span data-l="en">Your places, saved</span></h3>
+        <p><span data-l="es">Marca con un corazón los que te gustan y filtra por discoteca o pub, música, edad o cercanía. Sin registrarte, si no quieres.</span><span data-l="en">Heart the places you like and filter by club or bar, music, age or distance. No sign-up needed.</span></p>
+        <img class="step__shot" src="assets/img/es-favs.webp" data-src-en="assets/img/en-favs.webp" alt="" width="640" height="1391" loading="lazy">
+      </li>
+    </ol>
+  </div>
 </section>
-</main></body></html>
+
+<!-- ========== NÚMEROS ========== -->
+<section class="numbers" aria-label="Party en números">
+  <div class="numbers__grid">
+    <div class="num reveal"><b data-count="351">351</b><span data-l="es">locales</span><span data-l="en">venues</span></div>
+    <div class="num reveal"><b data-count="170">170</b><span data-l="es">discotecas</span><span data-l="en">clubs</span></div>
+    <div class="num reveal"><b data-count="181">181</b><span data-l="es">pubs</span><span data-l="en">bars</span></div>
+    <div class="num reveal"><b data-count="42">42</b><span data-l="es">ciudades</span><span data-l="en">cities</span></div>
+  </div>
+  <p class="numbers__note">
+    <span data-l="es">De Málaga a Ibiza, de Madrid a Canarias. Gratis, sin anuncios y en español e inglés.</span>
+    <span data-l="en">From Málaga to Ibiza, from Madrid to the Canary Islands. Free, ad-free, in Spanish and English.</span>
+  </p>
+</section>
+
+<!-- ========== PARA LOCALES ========== -->
+<section class="venues" id="locales">
+  <div class="venues__glow" aria-hidden="true"></div>
+  <header class="section-head section-head--venues">
+    <p class="kicker kicker--hot"><span data-l="es">Para discotecas y pubs</span><span data-l="en">For clubs and bars</span></p>
+    <h2><span data-l="es">Tu local, justo donde<br>se decide <em>la noche.</em></span><span data-l="en">Your venue, right where<br><em>the night</em> gets decided.</span></h2>
+    <p class="section-lead">
+      <span data-l="es">Quien abre Party ya está pensando en salir. Está cerca, mira el horario de hoy y quiere saber qué música hay y qué público va. Si tu ficha lo cuenta bien, te elige a ti.</span>
+      <span data-l="en">People who open Party are already planning to go out. They're nearby, checking tonight's hours and want to know the music and the crowd. If your page tells them, they pick you.</span>
+    </p>
+  </header>
+
+  <div class="venues__layout">
+    <ul class="offers">
+      <li class="offer reveal">
+        <span class="offer__icon" aria-hidden="true">0€</span>
+        <div>
+          <h3><span data-l="es">Aparecer es gratis</span><span data-l="en">Listing is free</span></h3>
+          <p><span data-l="es">Sin cuotas ni comisiones. Tu local sale en la app como cualquier otro, ordenado por cercanía.</span><span data-l="en">No fees, no commission. Your venue shows up like any other, sorted by distance.</span></p>
+        </div>
+      </li>
+      <li class="offer reveal">
+        <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v12H4zM12 17a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></span>
+        <div>
+          <h3><span data-l="es">Tu ficha, con tus datos oficiales</span><span data-l="en">Your page, with your official info</span></h3>
+          <p><span data-l="es">Mándanos fotos, horarios, precios, tipo de música y edad del público y los publicamos tal cual.</span><span data-l="en">Send us photos, hours, prices, music style and crowd age, and we publish them as they are.</span></p>
+        </div>
+      </li>
+      <li class="offer reveal">
+        <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/></svg></span>
+        <div>
+          <h3><span data-l="es">Cambios en menos de 48 horas</span><span data-l="en">Changes within 48 hours</span></h3>
+          <p><span data-l="es">¿Cambias el horario, cierras por vacaciones o tienes fotos nuevas? Escríbenos y lo actualizamos.</span><span data-l="en">New hours, closed for holidays or new photos? Email us and we update it.</span></p>
+        </div>
+      </li>
+      <li class="offer reveal">
+        <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21 3 3 10.5l7.5 3L13.5 21z"/></svg></span>
+        <div>
+          <h3><span data-l="es">De la pantalla a tu puerta</span><span data-l="en">From the screen to your door</span></h3>
+          <p><span data-l="es">Cada ficha tiene «Cómo llegar» a un toque y se puede compartir con el grupo de amigos.</span><span data-l="en">Every page has one-tap directions and can be shared with the group chat.</span></p>
+        </div>
+      </li>
+      <li class="offer reveal">
+        <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <div>
+          <h3><span data-l="es">Tú mandas</span><span data-l="en">You're in control</span></h3>
+          <p><span data-l="es">Si una foto no te gusta o prefieres no aparecer, la quitamos en 48 horas como máximo.</span><span data-l="en">Don't like a photo, or prefer not to be listed? We remove it within 48 hours.</span></p>
+        </div>
+      </li>
+    </ul>
+
+    <aside class="ficha reveal" aria-label="Ejemplo de ficha">
+      <p class="ficha__label"><span data-l="es">Así te ve la gente</span><span data-l="en">What people see</span></p>
+      <div class="ficha__card">
+        <div class="ficha__photo">
+          <span class="ficha__dist"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 3 3 10.5l7.5 3L13.5 21z"/></svg> 0.3 km</span>
+          <span class="ficha__ph"><span data-l="es">Tus fotos oficiales</span><span data-l="en">Your official photos</span></span>
+        </div>
+        <div class="ficha__body">
+          <h4><span data-l="es">Tu local</span><span data-l="en">Your venue</span></h4>
+          <p class="ficha__where"><span data-l="es">Centro, tu ciudad</span><span data-l="en">Downtown, your city</span></p>
+          <dl>
+            <div><dt><span data-l="es">Música</span><span data-l="en">Music</span></dt><dd>Reguetón · Comercial</dd></div>
+            <div><dt><span data-l="es">Edad</span><span data-l="en">Age</span></dt><dd>23–30</dd></div>
+            <div><dt><span data-l="es">Precios</span><span data-l="en">Prices</span></dt><dd><span data-l="es">Desde 12 €</span><span data-l="en">From €12</span></dd></div>
+            <div class="is-today"><dt><span data-l="es">Hoy</span><span data-l="en">Today</span></dt><dd>00:00 – 6:00</dd></div>
+          </dl>
+          <span class="ficha__cta"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 3 3 10.5l7.5 3L13.5 21z"/></svg> <span data-l="es">Cómo llegar</span><span data-l="en">Directions</span></span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="howto">
+    <h3 class="howto__title"><span data-l="es">Ponerlo a punto lleva cinco minutos</span><span data-l="en">Getting set up takes five minutes</span></h3>
+    <ol class="howto__steps">
+      <li class="reveal"><b>1</b><span data-l="es">Escríbenos con el nombre del local y la ciudad.</span><span data-l="en">Email us your venue's name and city.</span></li>
+      <li class="reveal"><b>2</b><span data-l="es">Adjunta fotos, horarios, precios, música y edad.</span><span data-l="en">Attach photos, hours, prices, music and age.</span></li>
+      <li class="reveal"><b>3</b><span data-l="es">Lo publicamos en menos de 48 horas.</span><span data-l="en">We publish it within 48 hours.</span></li>
+    </ol>
+    <div class="howto__cta">
+      <a class="btn btn--hot" data-mail="venue" href="mailto:contacto@partyyapp.com?subject=Mi%20local%20en%20Party">
+        <span data-l="es">Quiero mi local en Party</span><span data-l="en">Put my venue on Party</span>
+      </a>
+      <p class="howto__mail">contacto@partyyapp.com</p>
+    </div>
+    <p class="howto__note">
+      <span data-l="es">¿Tienes una idea de lo que te ayudaría a llenar el local? Estamos construyendo las herramientas para locales junto a los propios locales. Cuéntanosla.</span>
+      <span data-l="en">Got an idea for something that would help fill your venue? We're building our venue tools together with venues. Tell us.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq" id="faq">
+  <header class="section-head">
+    <p class="kicker"><span data-l="es">Preguntas</span><span data-l="en">Questions</span></p>
+    <h2><span data-l="es">Lo que nos suelen <em>preguntar.</em></span><span data-l="en">What people usually <em>ask.</em></span></h2>
+  </header>
+  <div class="faq__list">
+    <details class="reveal">
+      <summary><span data-l="es">¿Cuánto cuesta?</span><span data-l="en">How much does it cost?</span></summary>
+      <p><span data-l="es">Nada. Party es gratis, no tiene anuncios y no vende nada dentro de la app.</span><span data-l="en">Nothing. Party is free, has no ads and sells nothing inside the app.</span></p>
+    </details>
+    <details class="reveal">
+      <summary><span data-l="es">¿Tengo que registrarme?</span><span data-l="en">Do I need an account?</span></summary>
+      <p><span data-l="es">No. Puedes usarla entera sin cuenta. Si quieres, creas una para guardar tu perfil, y la puedes borrar cuando quieras desde la app o desde <a href="delete-account.html">esta página</a>.</span><span data-l="en">No. You can use all of it without an account. You can create one to save your profile and delete it any time from the app or from <a href="delete-account.html">this page</a>.</span></p>
+    </details>
+    <details class="reveal">
+      <summary><span data-l="es">¿En qué ciudades funciona?</span><span data-l="en">Which cities does it cover?</span></summary>
+      <p><span data-l="es">En 42 ciudades: Málaga, Madrid, Granada, València, Barcelona, Ibiza, Sevilla, Lloret de Mar, Benidorm, Canarias, Mallorca, la Costa del Sol y más. Vamos sumando locales cada semana.</span><span data-l="en">42 cities: Málaga, Madrid, Granada, Valencia, Barcelona, Ibiza, Seville, Lloret de Mar, Benidorm, the Canary Islands, Mallorca, the Costa del Sol and more. We add venues every week.</span></p>
+    </details>
+    <details class="reveal">
+      <summary><span data-l="es">¿Qué hacéis con mi ubicación?</span><span data-l="en">What do you do with my location?</span></summary>
+      <p><span data-l="es">Se usa solo en tu móvil para ordenar los locales por distancia. No la guardamos ni la enviamos a nadie. Más detalles en la <a href="privacy.html">política de privacidad</a>.</span><span data-l="en">It's only used on your phone to sort venues by distance. We don't store it or send it anywhere. More in our <a href="privacy.html#en">privacy policy</a>.</span></p>
+    </details>
+    <details class="reveal">
+      <summary><span data-l="es">Falta un local o hay un dato mal. ¿Qué hago?</span><span data-l="en">A venue is missing or something's wrong. What do I do?</span></summary>
+      <p><span data-l="es">Escríbenos a <a href="mailto:contacto@partyyapp.com">contacto@partyyapp.com</a> con el nombre del local y lo revisamos.</span><span data-l="en">Email <a href="mailto:contacto@partyyapp.com">contacto@partyyapp.com</a> with the venue's name and we'll check it.</span></p>
+    </details>
+    <details class="reveal">
+      <summary><span data-l="es">¿Cuándo puedo descargarla?</span><span data-l="en">When can I download it?</span></summary>
+      <p><span data-l="es">Muy pronto. Está terminando la revisión en App Store y Google Play. Party es para mayores de 18 años.</span><span data-l="en">Very soon. It's finishing review on the App Store and Google Play. Party is for adults 18+.</span></p>
+    </details>
+  </div>
+</section>
+
+<!-- ========== CTA FINAL ========== -->
+<section class="final" id="descargar">
+  <div class="final__bg" aria-hidden="true"><div class="blob blob--a"></div><div class="blob blob--b"></div></div>
+  <img class="final__icon" src="assets/img/icon-512.webp" alt="Icono de Party" width="128" height="128" loading="lazy">
+  <h2><span data-l="es">Esta noche,<br><em>¿dónde?</em></span><span data-l="en">Tonight,<br><em>where?</em></span></h2>
+  <p><span data-l="es">Party llega muy pronto a iPhone y Android. Gratis y sin anuncios.</span><span data-l="en">Party is coming very soon to iPhone and Android. Free and ad-free.</span></p>
+  <div class="stores stores--center" data-stores>
+    <a class="store" data-store="ios" href="#descargar" aria-label="App Store">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.59 1.1 8.74.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.32-3.5zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg>
+      <span class="store__txt"><small><span data-l="es">Muy pronto en</span><span data-l="en">Coming soon to</span></small>App Store</span>
+    </a>
+    <a class="store" data-store="android" href="#descargar" aria-label="Google Play">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.2.2-.3.5-.3.9v17.6c0 .4.1.7.3.9l.1.1 9.9-9.9v-.2L3.7 2.2l-.1.1zm13.3 13.1-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1zm.1-.1L13.6 12 3.6 22c.4.4 1 .4 1.7 0l11.7-6.7M17 8.7 5.3 2C4.6 1.6 4 1.7 3.6 2.1L13.6 12l3.4-3.3z"/></svg>
+      <span class="store__txt"><small><span data-l="es">Muy pronto en</span><span data-l="en">Coming soon to</span></small>Google Play</span>
+    </a>
+  </div>
+  <p class="final__age"><span data-l="es">+18 · Bebe con responsabilidad.</span><span data-l="en">18+ · Please drink responsibly.</span></p>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="foot">
+  <div class="foot__top">
+    <div class="foot__brand">
+      <img src="assets/img/icon-192.webp" alt="" width="40" height="40" loading="lazy">
+      <div><b>Party</b><span data-l="es">Discotecas y pubs cerca de ti</span><span data-l="en">Clubs and bars near you</span></div>
+    </div>
+    <nav class="foot__links" aria-label="Legal">
+      <a href="privacy.html"><span data-l="es">Política de privacidad</span><span data-l="en">Privacy policy</span></a>
+      <a href="terms.html"><span data-l="es">Términos de uso</span><span data-l="en">Terms of use</span></a>
+      <a href="delete-account.html"><span data-l="es">Eliminar cuenta</span><span data-l="en">Delete account</span></a>
+      <a href="mailto:contacto@partyyapp.com"><span data-l="es">Contacto y soporte</span><span data-l="en">Contact & support</span></a>
+    </nav>
+  </div>
+
+  <section class="legal" id="aviso-legal">
+    <h2>Aviso legal / Legal notice</h2>
+    <p>En cumplimiento del artículo 10 de la Ley 34/2002 (LSSI): / Pursuant to article 10 of Spanish Law 34/2002 (LSSI):</p>
+    <ul>
+      <li><strong>Titular / Owner:</strong> MALAGA NIGHTAPP, S. COOP. AND. (sociedad cooperativa andaluza en constitución / Andalusian cooperative, incorporation in progress)</li>
+      <li><strong>NIF (provisional):</strong> F05658919</li>
+      <li><strong>Domicilio / Registered address:</strong> Av. Diego Fernández de Mendoza 11, 29010 Málaga, España / Spain</li>
+      <li><strong>Email:</strong> <a href="mailto:contacto@partyyapp.com">contacto@partyyapp.com</a></li>
+      <li><strong>Constitución / Founded:</strong> asamblea constituyente del 22 de septiembre de 2026 / founding assembly held on 22 September 2026</li>
+      <li><strong>Registro / Registry:</strong> inscripción en trámite en el Registro de Cooperativas Andaluzas / registration pending with the Andalusian Cooperatives Registry</li>
+      <li><strong>D-U-N-S:</strong> 349717791</li>
+    </ul>
+    <p>
+      <span data-l="es">Los datos y fotos de los locales proceden de fuentes públicas o de los propios locales. Si eres el titular de un local o el autor de una foto y quieres que la corrijamos o la retiremos, escríbenos y lo hacemos en 48 horas como máximo.</span>
+      <span data-l="en">Venue details and photos come from public sources or from the venues themselves. If you own a venue or took a photo and want it corrected or removed, email us and we'll do it within 48 hours.</span>
+    </p>
+  </section>
+
+  <p class="foot__copy">© 2026 Partyy · Malaga NightApp, S. Coop. And. · Málaga</p>
+</footer>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+</body>
+</html>
