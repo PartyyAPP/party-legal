@@ -94,13 +94,92 @@
     });
   }
 
-  /* ---------- Music pills: tap to light up ---------- */
-  function initVibes() {
-    document.querySelectorAll("[data-vibes] button").forEach(function (b) {
-      b.addEventListener("click", function () {
-        b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true");
+  /* ---------- Hero: club lasers on a canvas ---------- */
+  function initLasers() {
+    var canvas = document.querySelector("[data-lasers]");
+    if (!canvas || !canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    var w = 0, h = 0, running = true, visible = true;
+    var COLORS = ["157,92,255", "255,62,165", "200,170,255", "255,120,200"];
+    var beams = [];
+    for (var i = 0; i < 9; i++) {
+      beams.push({
+        ox: [0.12, 0.5, 0.88][i % 3],
+        base: (i % 3 === 0 ? 0.35 : i % 3 === 2 ? -0.35 : 0) + (Math.random() - 0.5) * 0.5,
+        amp: 0.25 + Math.random() * 0.35,
+        speed: (0.12 + Math.random() * 0.22) * (reduced ? 0.35 : 1),
+        phase: Math.random() * Math.PI * 2,
+        width: 0.012 + Math.random() * 0.02,
+        color: COLORS[i % COLORS.length],
+        alpha: 0.22 + Math.random() * 0.25
       });
-    });
+    }
+    function size() {
+      var r = canvas.getBoundingClientRect();
+      w = r.width; h = r.height;
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function draw(t) {
+      if (!running) return;
+      requestAnimationFrame(draw);
+      if (!visible || document.hidden) return;
+      var s = t / 1000;
+      ctx.clearRect(0, 0, w, h);
+      ctx.globalCompositeOperation = "lighter";
+      var len = Math.hypot(w, h) * 1.1;
+      beams.forEach(function (b) {
+        var ang = Math.PI / 2 + b.base + Math.sin(s * b.speed + b.phase) * b.amp;
+        var ox = b.ox * w, oy = -10;
+        var spread = b.width;
+        var x1 = ox + Math.cos(ang - spread) * len, y1 = oy + Math.sin(ang - spread) * len;
+        var x2 = ox + Math.cos(ang + spread) * len, y2 = oy + Math.sin(ang + spread) * len;
+        var g = ctx.createLinearGradient(ox, oy, ox + Math.cos(ang) * len * 0.8, oy + Math.sin(ang) * len * 0.8);
+        var flick = 0.85 + Math.sin(s * 3 + b.phase * 3) * 0.15;
+        g.addColorStop(0, "rgba(" + b.color + "," + (b.alpha * flick) + ")");
+        g.addColorStop(0.55, "rgba(" + b.color + "," + (b.alpha * 0.35 * flick) + ")");
+        g.addColorStop(1, "rgba(" + b.color + ",0)");
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(x1, y1); ctx.lineTo(x2, y2); ctx.closePath(); ctx.fill();
+        // bright core line
+        ctx.strokeStyle = "rgba(255,255,255," + (0.08 * flick) + ")";
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(ox + Math.cos(ang) * len * 0.6, oy + Math.sin(ang) * len * 0.6); ctx.stroke();
+      });
+      // light sources at the top
+      [0.12, 0.5, 0.88].forEach(function (x, k) {
+        var rg = ctx.createRadialGradient(x * w, 0, 0, x * w, 0, 90);
+        rg.addColorStop(0, "rgba(255,255,255," + (0.35 + Math.sin(s * 2 + k) * 0.1) + ")");
+        rg.addColorStop(1, "rgba(157,92,255,0)");
+        ctx.fillStyle = rg; ctx.fillRect(x * w - 90, 0, 180, 90);
+      });
+      ctx.globalCompositeOperation = "source-over";
+    }
+    size();
+    window.addEventListener("resize", size);
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (e) { visible = e[0].isIntersecting; }, { threshold: 0 }).observe(canvas);
+    }
+    requestAnimationFrame(draw);
+  }
+
+  /* ---------- Soft spotlight that follows the pointer ---------- */
+  function initSpot() {
+    if (matchMedia("(hover: none)").matches) return;
+    var spot = document.querySelector("[data-spot]");
+    if (!spot) return;
+    var x = 0, y = 0, tx = 0, ty = 0, started = false;
+    window.addEventListener("pointermove", function (e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!started) { started = true; x = tx; y = ty; spot.classList.add("is-on"); loop(); }
+    }, { passive: true });
+    function loop() {
+      x += (tx - x) * 0.12; y += (ty - y) * 0.12;
+      spot.style.transform = "translate3d(" + x + "px," + y + "px,0)";
+      requestAnimationFrame(loop);
+    }
   }
 
   /* ---------- Reveal on scroll ---------- */
@@ -200,7 +279,9 @@
     safe(initNav, "nav");
     safe(initHeroPointer, "hero");
     safe(initMarquee, "marquee");
-    safe(initVibes, "vibes");
+    safe(initLasers, "lasers");
+    safe(initSpot, "spot");
+    setTimeout(function () { root.classList.add("anim-done"); }, 2500);
     safe(initReveal, "reveal");
     safe(initStory, "story");
     safe(initCount, "count");

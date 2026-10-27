@@ -20,12 +20,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=20261027e">
+<link rel="stylesheet" href="assets/site.css?v=20261027g">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MobileApplication","name":"Party: Discotecas y Pubs","operatingSystem":"iOS, Android","applicationCategory":"TravelApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"MALAGA NIGHTAPP, S. COOP. AND.","url":"https://partyyapp.com","email":"contacto@partyyapp.com"}}
 </script>
 <script>document.documentElement.classList.add("js")</script>
-<script defer src="assets/site.js?v=20261027e"></script>
+<script defer src="assets/site.js?v=20261027g"></script>
 </head>
 <body>
 
@@ -59,7 +59,8 @@
     <div class="blob blob--a"></div>
     <div class="blob blob--b"></div>
     <div class="blob blob--c" data-pointer-blob></div>
-    <div class="beams"><i></i><i></i><i></i></div>
+    <canvas class="lasers" data-lasers></canvas>
+    <div class="haze"></div>
     <div class="grain"></div>
   </div>
 
@@ -67,8 +68,8 @@
     <div class="hero__copy">
       <p class="live"><span class="live__dot"></span><span data-clock><span data-l="es">Ahora mismo</span><span data-l="en">Right now</span></span></p>
       <h1 class="hero__title">
-        <span class="line"><span data-l="es">¿Dónde salimos</span><span data-l="en">Where are we</span></span>
-        <span class="line"><em class="glow"><span data-l="es">esta noche?</span><span data-l="en">going tonight?</span></em></span>
+        <span class="line"><span class="line__in"><span data-l="es">¿Dónde salimos</span><span data-l="en">Where are we</span></span></span>
+        <span class="line"><span class="line__in"><em class="glow"><span data-l="es">esta noche?</span><span data-l="en">going tonight?</span></em></span></span>
       </h1>
       <p class="hero__lead">
         <span data-l="es">Las discotecas y pubs que tienes cerca, con horario de hoy, precio, música, edad del público y cómo llegar. Decide en segundos y sal.</span>
@@ -105,37 +106,33 @@
           <img data-l="en" src="assets/img/en-explore.webp" alt="Party Explore screen with venues" width="640" height="1391" loading="lazy">
         </div>
       </div>
-      <div class="sticker sticker--lime"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 3 3 10.5l7.5 3L13.5 21z"/></svg> 0.1 km</div>
-      <div class="sticker sticker--pink"><span data-l="es">Hoy hasta las 6:00</span><span data-l="en">Open till 6am</span></div>
-      <div class="sticker sticker--white">♫ <span data-l="es">Reguetón · 18–25</span><span data-l="en">Reggaeton · 18–25</span></div>
-      <div class="badge" aria-hidden="true">
-        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
-          <text><textPath href="#circ" textLength="460" lengthAdjust="spacing">GRATIS ✦ SIN ANUNCIOS ✦ +18 ✦ SIN REGISTRO ✦</textPath></text></svg>
-        <span>✦</span>
-      </div>
+      <div class="fan__floor" aria-hidden="true"></div>
     </div>
   </div>
 
   <a class="scrollhint" href="#app" aria-label="Seguir bajando"><span></span></a>
 </section>
 
-<!-- ========== MARQUEE DESTINOS ========== -->
-<section class="tapes" id="ciudades" aria-label="Destinos">
-  <div class="tape tape--pink">
-    <div class="tape__track" data-marquee>
+<!-- ========== DESTINOS ========== -->
+<section class="cities" id="ciudades" aria-label="Destinos">
+  <div class="cities__row">
+    <div class="cities__track" data-marquee>
       <ul>
-        <li>Málaga y Costa del Sol <sup>75</sup></li><li>Madrid <sup>31</sup></li><li>Granada <sup>29</sup></li><li>València <sup>28</sup></li><li>Barcelona <sup>27</sup></li><li>Ibiza <sup>25</sup></li><li>Sevilla <sup>24</sup></li><li>Lloret de Mar <sup>21</sup></li><li>Gran Canaria <sup>21</sup></li><li>Mallorca <sup>18</sup></li><li>Tenerife <sup>16</sup></li><li>Cádiz <sup>15</sup></li><li>Benidorm <sup>13</sup></li><li>Lagos, Portugal <sup>8</sup></li>
+        <li>Málaga<sup>75</sup></li><li>Madrid<sup>31</sup></li><li>Granada<sup>29</sup></li><li>València<sup>28</sup></li><li>Barcelona<sup>27</sup></li><li>Ibiza<sup>25</sup></li><li>Sevilla<sup>24</sup></li>
       </ul>
     </div>
   </div>
-  <div class="tape tape--lime" aria-hidden="true">
-    <div class="tape__track tape__track--rev" data-marquee>
+  <div class="cities__row cities__row--rev">
+    <div class="cities__track" data-marquee>
       <ul>
-        <li data-l="es">Gratis</li><li data-l="es">Sin anuncios</li><li data-l="es">Horario de hoy</li><li data-l="es">Cómo llegar</li><li data-l="es">Sin registrarte</li><li data-l="es">+18</li>
-        <li data-l="en">Free</li><li data-l="en">No ads</li><li data-l="en">Tonight's hours</li><li data-l="en">Directions</li><li data-l="en">No sign-up</li><li data-l="en">18+</li>
+        <li>Lloret de Mar<sup>21</sup></li><li>Gran Canaria<sup>21</sup></li><li>Mallorca<sup>18</sup></li><li>Tenerife<sup>16</sup></li><li>Cádiz<sup>15</sup></li><li>Benidorm<sup>13</sup></li><li>Lagos<sup>8</sup></li>
       </ul>
     </div>
   </div>
+  <p class="cities__cap">
+    <span data-l="es">13 destinos en España y Lagos, en el Algarve. El número es cuántos locales tiene cada uno en la app. Málaga incluye la Costa del Sol.</span>
+    <span data-l="en">13 destinations in Spain plus Lagos, in the Algarve. The number is how many venues each has in the app. Málaga includes the Costa del Sol.</span>
+  </p>
 </section>
 
 <!-- ========== LA APP (scrollytelling) ========== -->
@@ -185,28 +182,21 @@
 </section>
 
 <!-- ========== MÚSICA ========== -->
-<section class="vibes" aria-labelledby="vibes-title">
+<section class="lineup" aria-labelledby="lineup-title">
+  <div class="lineup__glow" aria-hidden="true"></div>
   <header class="section-head section-head--center">
     <p class="kicker"><span data-l="es">Filtra por música</span><span data-l="en">Filter by music</span></p>
-    <h2 id="vibes-title"><span data-l="es">¿Qué te <em>va</em> esta noche?</span><span data-l="en">What are you <em>into</em> tonight?</span></h2>
+    <h2 id="lineup-title"><span data-l="es">El line-up de esta noche<br><em>lo eliges tú.</em></span><span data-l="en">Tonight's line-up<br><em>is your call.</em></span></h2>
   </header>
-  <ul class="vibes__cloud" data-vibes>
-    <li class="vibe v1 reveal"><button type="button" aria-pressed="false"><span data-l="es">Reguetón</span><span data-l="en">Reggaeton</span><sup>72</sup></button></li>
-    <li class="vibe v2 reveal"><button type="button" aria-pressed="false">Techno<sup>32</sup></button></li>
-    <li class="vibe v3 reveal"><button type="button" aria-pressed="false"><span data-l="es">Comercial</span><span data-l="en">Commercial</span><sup>41</sup></button></li>
-    <li class="vibe v4 reveal"><button type="button" aria-pressed="false">House<sup>17</sup></button></li>
-    <li class="vibe v5 reveal"><button type="button" aria-pressed="false">Latina<sup>15</sup></button></li>
-    <li class="vibe v6 reveal"><button type="button" aria-pressed="false"><span data-l="es">Internacional</span><span data-l="en">International</span><sup>17</sup></button></li>
-    <li class="vibe v7 reveal"><button type="button" aria-pressed="false"><span data-l="es">Electrónica</span><span data-l="en">Electronic</span><sup>13</sup></button></li>
-    <li class="vibe v8 reveal"><button type="button" aria-pressed="false">Pop<sup>11</sup></button></li>
-    <li class="vibe v9 reveal"><button type="button" aria-pressed="false">Hip hop<sup>4</sup></button></li>
-    <li class="vibe v10 reveal"><button type="button" aria-pressed="false">Indie<sup>4</sup></button></li>
-    <li class="vibe v11 reveal"><button type="button" aria-pressed="false">Afro<sup>3</sup></button></li>
-    <li class="vibe v12 reveal"><button type="button" aria-pressed="false">Silent disco<sup>2</sup></button></li>
-  </ul>
-  <p class="vibes__note">
-    <span data-l="es">El número es cuántos locales de la app ponen ese estilo. Y además filtras por discoteca o pub, edad del público y distancia.</span>
-    <span data-l="en">The number is how many venues in the app list that style. You can also filter by club or bar, crowd age and distance.</span>
+  <div class="poster reveal">
+    <p class="poster__row poster__row--xl"><span class="act"><span data-l="es">Reguetón</span><span data-l="en">Reggaeton</span><sup>72</sup></span></p>
+    <p class="poster__row poster__row--l"><span class="act"><span data-l="es">Comercial</span><span data-l="en">Commercial</span><sup>41</sup></span><i>✦</i><span class="act">Techno<sup>32</sup></span></p>
+    <p class="poster__row poster__row--m"><span class="act">House<sup>17</sup></span><i>✦</i><span class="act"><span data-l="es">Internacional</span><span data-l="en">International</span><sup>17</sup></span><i>✦</i><span class="act">Latina<sup>15</sup></span></p>
+    <p class="poster__row poster__row--s"><span class="act"><span data-l="es">Electrónica</span><span data-l="en">Electronic</span><sup>13</sup></span><i>✦</i><span class="act">Pop<sup>11</sup></span><i>✦</i><span class="act">Hip hop<sup>4</sup></span><i>✦</i><span class="act">Indie<sup>4</sup></span><i>✦</i><span class="act">Afro<sup>3</sup></span><i>✦</i><span class="act">Silent disco<sup>2</sup></span></p>
+  </div>
+  <p class="lineup__note">
+    <span data-l="es">Cada número es cuántos locales de la app ponen ese estilo. Filtra también por discoteca o pub, edad del público y distancia.</span>
+    <span data-l="en">Each number is how many venues in the app list that style. You can also filter by club or bar, crowd age and distance.</span>
   </p>
 </section>
 
@@ -409,6 +399,8 @@
   <p class="foot__copy">© 2026 Partyy · Malaga NightApp, S. Coop. And. · Málaga</p>
 </footer>
 
+<div class="spot" data-spot aria-hidden="true"></div>
+<div class="grain-all" aria-hidden="true"></div>
 <div class="toast" data-toast role="status" aria-live="polite"></div>
 
 </body>
