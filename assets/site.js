@@ -269,7 +269,7 @@
       var body = es
         ? "Hola,\n\nNombre del local:\nCiudad y dirección:\nTipo (discoteca o pub):\nMúsica:\nEdad del público:\nPrecio de entrada:\nHorario de cada día:\n\nAdjunto fotos oficiales del local.\n\nGracias."
         : "Hi,\n\nVenue name:\nCity and address:\nType (club or bar):\nMusic:\nCrowd age:\nEntry price:\nOpening hours per day:\n\nOfficial photos attached.\n\nThanks.";
-      a.href = "mailto:contacto@partyyapp.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      a.href = "mailto:contactpartyy@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     });
   }
 
