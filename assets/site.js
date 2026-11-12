@@ -4,8 +4,8 @@
 
   // Store links: fill in once the app is live in each store.
   var STORES = {
-    ios: "",     // e.g. https://apps.apple.com/es/app/id6827253251
-    android: ""  // e.g. https://play.google.com/store/apps/details?id=com.partyyapp.app
+    ios: "https://apps.apple.com/es/app/id6827253251",
+    android: "https://play.google.com/store/apps/details?id=com.partyyapp.app&referrer=utm_source%3Dweb"
   };
 
   var root = document.documentElement;
