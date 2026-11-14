@@ -208,7 +208,7 @@ html:not(.is-en) .lang__opt[data-opt="es"],html.is-en .lang__opt[data-opt="en"]{
 .num b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(44px,6.4vw,88px);line-height:1;letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
 .num>span{display:block;margin-top:10px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
 .numbers__note{text-align:center;color:var(--muted);margin:26px auto 0;max-width:560px}
-@media (max-width:700px){.numbers__grid{grid-template-columns:repeat(2,1fr)}.num:nth-child(3){border-left:0}.num:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:700px){.numbers__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.num:nth-child(3){border-left:0}.num:nth-child(n+3){border-top:1px solid var(--line)}}
 
 /* ---- Venues ---- */
 .venues{position:relative;padding:clamp(90px,12vw,160px) 0;background:linear-gradient(180deg,var(--night) 0%,#12061a 18%,#160723 70%,var(--night) 100%);overflow:clip;isolation:isolate}
@@ -320,3 +320,4 @@ html:not(.is-en) .lang__opt[data-opt="es"],html.is-en .lang__opt[data-opt="en"]{
 .grain-all{position:fixed;inset:-50%;z-index:60;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(4) infinite}
 @keyframes grain{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}}
 main,.foot{position:relative;z-index:2}
+@media (max-width:400px){.num b{font-size:38px}}
