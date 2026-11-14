@@ -1,0 +1,77 @@
+# Party (partyyapp.com)
+
+> Party es una app gratis y sin anuncios para saber qué discotecas y pubs abren esta noche cerca de ti, con horarios, música, edad del público, fotos y cómo llegar. iPhone y Android, en español e inglés. Hecha en Málaga.
+> Party is a free, ad-free app that shows which clubs and bars are open tonight near you, with opening hours, music, crowd age, photos and directions. iPhone and Android, in Spanish and English. Made in Málaga, Spain.
+
+## Datos / Key facts
+- Locales / Venues: 1537 discotecas y pubs en 59 destinos (755 en 30 destinos de España y 782 en 29 destinos del resto de Europa), a 2026-11-14.
+- Funciones / Features: lista por cercanía, mapa, filtro «Abierto esta noche», filtros por música, edad del público, tipo de local y distancia; «Voy esta noche» (cuánta gente va) y «¿Cómo está?» (cómo está el local ahora, según quien está allí); favoritos.
+- Precio / Price: gratis, sin anuncios ni compras dentro de la app. No vende entradas. / Free, no ads, no in-app purchases. Does not sell tickets.
+- Cuenta / Account: no hace falta registrarse. / No sign-up needed.
+- Público / Audience: mayores de 18 años. / 18+.
+- Empresa / Company: Malaga NightApp, S. Coop. And. (Málaga, España). Contacto: contactpartyy@gmail.com
+- App Store: https://apps.apple.com/app/id6827253251
+- Google Play: https://play.google.com/store/apps/details?id=com.partyyapp.app
+- Instagram: https://www.instagram.com/partyyapp/
+- TikTok: https://www.tiktok.com/@partyyapp
+
+## Destinos / Destinations
+- [Málaga y Costa del Sol](https://partyyapp.com/discotecas/malaga/) · [Málaga & Costa del Sol in English](https://partyyapp.com/en/nightlife/malaga/) — 101
+- [Madrid](https://partyyapp.com/discotecas/madrid/) · [Madrid in English](https://partyyapp.com/en/nightlife/madrid/) — 76
+- [Barcelona](https://partyyapp.com/discotecas/barcelona/) · [Barcelona in English](https://partyyapp.com/en/nightlife/barcelona/) — 59
+- [Sevilla](https://partyyapp.com/discotecas/sevilla/) · [Seville in English](https://partyyapp.com/en/nightlife/seville/) — 49
+- [València](https://partyyapp.com/discotecas/valencia/) · [Valencia in English](https://partyyapp.com/en/nightlife/valencia/) — 48
+- [Ibiza](https://partyyapp.com/discotecas/ibiza/) · [Ibiza in English](https://partyyapp.com/en/nightlife/ibiza/) — 38
+- [Gran Canaria](https://partyyapp.com/discotecas/gran-canaria/) · [Gran Canaria in English](https://partyyapp.com/en/nightlife/gran-canaria/) — 32
+- [Granada](https://partyyapp.com/discotecas/granada/) · [Granada in English](https://partyyapp.com/en/nightlife/granada/) — 30
+- [Lloret de Mar](https://partyyapp.com/discotecas/lloret-de-mar/) · [Lloret de Mar in English](https://partyyapp.com/en/nightlife/lloret-de-mar/) — 30
+- [Mallorca](https://partyyapp.com/discotecas/mallorca/) · [Mallorca in English](https://partyyapp.com/en/nightlife/mallorca/) — 23
+- [Benidorm](https://partyyapp.com/discotecas/benidorm/) · [Benidorm in English](https://partyyapp.com/en/nightlife/benidorm/) — 21
+- [Vigo](https://partyyapp.com/discotecas/vigo/) · [Vigo in English](https://partyyapp.com/en/nightlife/vigo/) — 20
+- [Marbella](https://partyyapp.com/discotecas/marbella/) · [Marbella in English](https://partyyapp.com/en/nightlife/marbella/) — 18
+- [Tenerife](https://partyyapp.com/discotecas/tenerife/) · [Tenerife in English](https://partyyapp.com/en/nightlife/tenerife/) — 17
+- [Valladolid](https://partyyapp.com/discotecas/valladolid/) · [Valladolid in English](https://partyyapp.com/en/nightlife/valladolid/) — 17
+- [Santiago de Compostela](https://partyyapp.com/discotecas/santiago-de-compostela/) · [Santiago de Compostela in English](https://partyyapp.com/en/nightlife/santiago-de-compostela/) — 17
+- [Bilbao](https://partyyapp.com/discotecas/bilbao/) · [Bilbao in English](https://partyyapp.com/en/nightlife/bilbao/) — 17
+- [Cádiz](https://partyyapp.com/discotecas/cadiz/) · [Cádiz in English](https://partyyapp.com/en/nightlife/cadiz/) — 17
+- [Santander](https://partyyapp.com/discotecas/santander/) · [Santander in English](https://partyyapp.com/en/nightlife/santander/) — 16
+- [Zaragoza](https://partyyapp.com/discotecas/zaragoza/) · [Zaragoza in English](https://partyyapp.com/en/nightlife/zaragoza/) — 16
+- [Gijón](https://partyyapp.com/discotecas/gijon/) · [Gijón in English](https://partyyapp.com/en/nightlife/gijon/) — 12
+- [Salamanca](https://partyyapp.com/discotecas/salamanca/) · [Salamanca in English](https://partyyapp.com/en/nightlife/salamanca/) — 11
+- [Oviedo](https://partyyapp.com/discotecas/oviedo/) · [Oviedo in English](https://partyyapp.com/en/nightlife/oviedo/) — 11
+- [Burgos](https://partyyapp.com/discotecas/burgos/) · [Burgos in English](https://partyyapp.com/en/nightlife/burgos/) — 11
+- [A Coruña](https://partyyapp.com/discotecas/a-coruna/) · [A Coruña in English](https://partyyapp.com/en/nightlife/a-coruna/) — 11
+- [San Sebastián](https://partyyapp.com/discotecas/san-sebastian/) · [San Sebastián in English](https://partyyapp.com/en/nightlife/san-sebastian/) — 10
+- [León](https://partyyapp.com/discotecas/leon/) · [León in English](https://partyyapp.com/en/nightlife/leon/) — 10
+- [Vitoria-Gasteiz](https://partyyapp.com/discotecas/vitoria-gasteiz/) · [Vitoria-Gasteiz in English](https://partyyapp.com/en/nightlife/vitoria-gasteiz/) — 9
+- [Pamplona](https://partyyapp.com/discotecas/pamplona/) · [Pamplona in English](https://partyyapp.com/en/nightlife/pamplona/) — 6
+- [Logroño](https://partyyapp.com/discotecas/logrono/) · [Logroño in English](https://partyyapp.com/en/nightlife/logrono/) — 2
+- [Múnich](https://partyyapp.com/discotecas/munich/) · [Munich in English](https://partyyapp.com/en/nightlife/munich/) — 50
+- [Hamburgo](https://partyyapp.com/discotecas/hamburgo/) · [Hamburg in English](https://partyyapp.com/en/nightlife/hamburg/) — 47
+- [Cracovia](https://partyyapp.com/discotecas/cracovia/) · [Kraków in English](https://partyyapp.com/en/nightlife/krakow/) — 44
+- [Budapest](https://partyyapp.com/discotecas/budapest/) · [Budapest in English](https://partyyapp.com/en/nightlife/budapest/) — 41
+- [Praga](https://partyyapp.com/discotecas/praga/) · [Prague in English](https://partyyapp.com/en/nightlife/prague/) — 39
+- [Belgrado](https://partyyapp.com/discotecas/belgrado/) · [Belgrade in English](https://partyyapp.com/en/nightlife/belgrade/) — 33
+- [Malta](https://partyyapp.com/discotecas/malta/) · [Malta in English](https://partyyapp.com/en/nightlife/malta/) — 32
+- [Berlín](https://partyyapp.com/discotecas/berlin/) · [Berlin in English](https://partyyapp.com/en/nightlife/berlin/) — 31
+- [Oporto](https://partyyapp.com/discotecas/oporto/) · [Porto in English](https://partyyapp.com/en/nightlife/porto/) — 30
+- [Ámsterdam](https://partyyapp.com/discotecas/amsterdam/) · [Amsterdam in English](https://partyyapp.com/en/nightlife/amsterdam/) — 29
+- [Lisboa](https://partyyapp.com/discotecas/lisboa/) · [Lisbon in English](https://partyyapp.com/en/nightlife/lisbon/) — 27
+- [Dublín](https://partyyapp.com/discotecas/dublin/) · [Dublin in English](https://partyyapp.com/en/nightlife/dublin/) — 26
+- [Londres](https://partyyapp.com/discotecas/londres/) · [London in English](https://partyyapp.com/en/nightlife/london/) — 26
+- [Milán](https://partyyapp.com/discotecas/milan/) · [Milan in English](https://partyyapp.com/en/nightlife/milan/) — 25
+- [París](https://partyyapp.com/discotecas/paris/) · [Paris in English](https://partyyapp.com/en/nightlife/paris/) — 25
+- [Bucarest](https://partyyapp.com/discotecas/bucarest/) · [Bucharest in English](https://partyyapp.com/en/nightlife/bucharest/) — 25
+- [Manchester](https://partyyapp.com/discotecas/manchester/) · [Manchester in English](https://partyyapp.com/en/nightlife/manchester/) — 25
+- [Ios](https://partyyapp.com/discotecas/ios/) · [Ios in English](https://partyyapp.com/en/nightlife/ios/) — 24
+- [Roma](https://partyyapp.com/discotecas/roma/) · [Rome in English](https://partyyapp.com/en/nightlife/rome/) — 24
+- [Liverpool](https://partyyapp.com/discotecas/liverpool/) · [Liverpool in English](https://partyyapp.com/en/nightlife/liverpool/) — 23
+- [Niza](https://partyyapp.com/discotecas/niza/) · [Nice in English](https://partyyapp.com/en/nightlife/nice/) — 23
+- [Mykonos](https://partyyapp.com/discotecas/mykonos/) · [Mykonos in English](https://partyyapp.com/en/nightlife/mykonos/) — 22
+- [Rímini y Riccione](https://partyyapp.com/discotecas/rimini-riccione/) · [Rimini & Riccione in English](https://partyyapp.com/en/nightlife/rimini-riccione/) — 20
+- [Hvar](https://partyyapp.com/discotecas/hvar/) · [Hvar in English](https://partyyapp.com/en/nightlife/hvar/) — 18
+- [Algarve](https://partyyapp.com/discotecas/algarve/) · [Algarve in English](https://partyyapp.com/en/nightlife/algarve/) — 18
+- [Bergen](https://partyyapp.com/discotecas/bergen/) · [Bergen in English](https://partyyapp.com/en/nightlife/bergen/) — 15
+- [Ayia Napa](https://partyyapp.com/discotecas/ayia-napa/) · [Ayia Napa in English](https://partyyapp.com/en/nightlife/ayia-napa/) — 15
+- [Mónaco](https://partyyapp.com/discotecas/monaco/) · [Monaco in English](https://partyyapp.com/en/nightlife/monaco/) — 13
+- [Isla de Pag](https://partyyapp.com/discotecas/pag/) · [Pag Island in English](https://partyyapp.com/en/nightlife/pag/) — 12

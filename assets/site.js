@@ -28,13 +28,12 @@
     safe(tickClock, "clock");
   }
   function initLang() {
-    var saved = null;
-    try { saved = localStorage.getItem("party-lang"); } catch (e) {}
-    var lang = saved || ((navigator.language || "es").toLowerCase().indexOf("es") === 0 ? "es" : "en");
-    if (location.hash === "#en") lang = "en";
-    setLang(lang, false);
+    // Each language has its own URL (/ and /en/) so Google indexes both; the button moves between them.
+    var onEn = location.pathname.indexOf("/en/") === 0;
+    if (!onEn && location.hash === "#en") { location.replace("/en/"); return; }
+    setLang(onEn ? "en" : "es", false);
     var btn = document.querySelector("[data-lang-toggle]");
-    if (btn) btn.addEventListener("click", function () { setLang(isEn() ? "es" : "en", true); });
+    if (btn) btn.addEventListener("click", function () { location.href = onEn ? "/" : "/en/"; });
   }
 
   /* ---------- Live clock (like the app's "Ahora mismo") ---------- */

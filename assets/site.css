@@ -321,3 +321,5 @@ html:not(.is-en) .lang__opt[data-opt="es"],html.is-en .lang__opt[data-opt="en"]{
 @keyframes grain{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}}
 main,.foot{position:relative;z-index:2}
 @media (max-width:400px){.num b{font-size:38px}}
+.cities li a{color:inherit;text-decoration:none}
+.cities__all{color:var(--hot);font-weight:700;white-space:nowrap}
