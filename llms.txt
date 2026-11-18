@@ -4,7 +4,7 @@
 > Party is a free, ad-free app that shows which clubs and bars are open tonight near you, with opening hours, music, crowd age, photos and directions. iPhone and Android, in Spanish and English. Made in Málaga, Spain.
 
 ## Datos / Key facts
-- Locales / Venues: 1537 discotecas y pubs en 59 destinos (755 en 30 destinos de España y 782 en 29 destinos del resto de Europa), a 2026-11-14.
+- Locales / Venues: 1573 discotecas y pubs en 59 destinos (791 en 30 destinos de España y 782 en 29 destinos del resto de Europa), a 2026-11-18.
 - Funciones / Features: lista por cercanía, mapa, filtro «Abierto esta noche», filtros por música, edad del público, tipo de local y distancia; «Voy esta noche» (cuánta gente va) y «¿Cómo está?» (cómo está el local ahora, según quien está allí); favoritos.
 - Precio / Price: gratis, sin anuncios ni compras dentro de la app. No vende entradas. / Free, no ads, no in-app purchases. Does not sell tickets.
 - Cuenta / Account: no hace falta registrarse. / No sign-up needed.
@@ -16,9 +16,10 @@
 - TikTok: https://www.tiktok.com/@partyyapp
 
 ## Destinos / Destinations
-- [Málaga y Costa del Sol](https://partyyapp.com/discotecas/malaga/) · [Málaga & Costa del Sol in English](https://partyyapp.com/en/nightlife/malaga/) — 101
+- [Málaga y Costa del Sol](https://partyyapp.com/discotecas/malaga/) · [Málaga & Costa del Sol in English](https://partyyapp.com/en/nightlife/malaga/) — 106
 - [Madrid](https://partyyapp.com/discotecas/madrid/) · [Madrid in English](https://partyyapp.com/en/nightlife/madrid/) — 76
 - [Barcelona](https://partyyapp.com/discotecas/barcelona/) · [Barcelona in English](https://partyyapp.com/en/nightlife/barcelona/) — 59
+- [Marbella](https://partyyapp.com/discotecas/marbella/) · [Marbella in English](https://partyyapp.com/en/nightlife/marbella/) — 49
 - [Sevilla](https://partyyapp.com/discotecas/sevilla/) · [Seville in English](https://partyyapp.com/en/nightlife/seville/) — 49
 - [València](https://partyyapp.com/discotecas/valencia/) · [Valencia in English](https://partyyapp.com/en/nightlife/valencia/) — 48
 - [Ibiza](https://partyyapp.com/discotecas/ibiza/) · [Ibiza in English](https://partyyapp.com/en/nightlife/ibiza/) — 38
@@ -28,7 +29,6 @@
 - [Mallorca](https://partyyapp.com/discotecas/mallorca/) · [Mallorca in English](https://partyyapp.com/en/nightlife/mallorca/) — 23
 - [Benidorm](https://partyyapp.com/discotecas/benidorm/) · [Benidorm in English](https://partyyapp.com/en/nightlife/benidorm/) — 21
 - [Vigo](https://partyyapp.com/discotecas/vigo/) · [Vigo in English](https://partyyapp.com/en/nightlife/vigo/) — 20
-- [Marbella](https://partyyapp.com/discotecas/marbella/) · [Marbella in English](https://partyyapp.com/en/nightlife/marbella/) — 18
 - [Tenerife](https://partyyapp.com/discotecas/tenerife/) · [Tenerife in English](https://partyyapp.com/en/nightlife/tenerife/) — 17
 - [Valladolid](https://partyyapp.com/discotecas/valladolid/) · [Valladolid in English](https://partyyapp.com/en/nightlife/valladolid/) — 17
 - [Santiago de Compostela](https://partyyapp.com/discotecas/santiago-de-compostela/) · [Santiago de Compostela in English](https://partyyapp.com/en/nightlife/santiago-de-compostela/) — 17
