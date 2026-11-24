@@ -4,7 +4,7 @@
 > Party is a free, ad-free app that shows which clubs and bars are open tonight near you, with opening hours, music, crowd age, photos and directions. iPhone and Android, in Spanish and English. Made in Málaga, Spain.
 
 ## Datos / Key facts
-- Locales / Venues: 1574 discotecas y pubs en 59 destinos (792 en 30 destinos de España y 782 en 29 destinos del resto de Europa), a 2026-11-20.
+- Locales / Venues: 1569 discotecas y pubs en 59 destinos (788 en 30 destinos de España y 781 en 29 destinos del resto de Europa), a 2026-11-24.
 - Funciones / Features: lista por cercanía, mapa, filtro «Abierto esta noche», filtros por música, edad del público, tipo de local y distancia; «Voy esta noche» (cuánta gente va) y «¿Cómo está?» (cómo está el local ahora, según quien está allí); favoritos.
 - Precio / Price: gratis, sin anuncios ni compras dentro de la app. No vende entradas. / Free, no ads, no in-app purchases. Does not sell tickets.
 - Cuenta / Account: no hace falta registrarse. / No sign-up needed.
@@ -16,16 +16,16 @@
 - TikTok: https://www.tiktok.com/@partyyapp
 
 ## Destinos / Destinations
-- [Málaga y Costa del Sol](https://partyyapp.com/discotecas/malaga/) · [Málaga & Costa del Sol in English](https://partyyapp.com/en/nightlife/malaga/) — 106
+- [Málaga y Costa del Sol](https://partyyapp.com/discotecas/malaga/) · [Málaga & Costa del Sol in English](https://partyyapp.com/en/nightlife/malaga/) — 104
 - [Madrid](https://partyyapp.com/discotecas/madrid/) · [Madrid in English](https://partyyapp.com/en/nightlife/madrid/) — 76
 - [Barcelona](https://partyyapp.com/discotecas/barcelona/) · [Barcelona in English](https://partyyapp.com/en/nightlife/barcelona/) — 59
 - [Marbella](https://partyyapp.com/discotecas/marbella/) · [Marbella in English](https://partyyapp.com/en/nightlife/marbella/) — 50
 - [Sevilla](https://partyyapp.com/discotecas/sevilla/) · [Seville in English](https://partyyapp.com/en/nightlife/seville/) — 49
 - [València](https://partyyapp.com/discotecas/valencia/) · [Valencia in English](https://partyyapp.com/en/nightlife/valencia/) — 48
 - [Ibiza](https://partyyapp.com/discotecas/ibiza/) · [Ibiza in English](https://partyyapp.com/en/nightlife/ibiza/) — 38
-- [Gran Canaria](https://partyyapp.com/discotecas/gran-canaria/) · [Gran Canaria in English](https://partyyapp.com/en/nightlife/gran-canaria/) — 32
-- [Granada](https://partyyapp.com/discotecas/granada/) · [Granada in English](https://partyyapp.com/en/nightlife/granada/) — 30
+- [Gran Canaria](https://partyyapp.com/discotecas/gran-canaria/) · [Gran Canaria in English](https://partyyapp.com/en/nightlife/gran-canaria/) — 31
 - [Lloret de Mar](https://partyyapp.com/discotecas/lloret-de-mar/) · [Lloret de Mar in English](https://partyyapp.com/en/nightlife/lloret-de-mar/) — 30
+- [Granada](https://partyyapp.com/discotecas/granada/) · [Granada in English](https://partyyapp.com/en/nightlife/granada/) — 29
 - [Mallorca](https://partyyapp.com/discotecas/mallorca/) · [Mallorca in English](https://partyyapp.com/en/nightlife/mallorca/) — 23
 - [Benidorm](https://partyyapp.com/discotecas/benidorm/) · [Benidorm in English](https://partyyapp.com/en/nightlife/benidorm/) — 21
 - [Vigo](https://partyyapp.com/discotecas/vigo/) · [Vigo in English](https://partyyapp.com/en/nightlife/vigo/) — 20
@@ -65,8 +65,8 @@
 - [Manchester](https://partyyapp.com/discotecas/manchester/) · [Manchester in English](https://partyyapp.com/en/nightlife/manchester/) — 25
 - [Ios](https://partyyapp.com/discotecas/ios/) · [Ios in English](https://partyyapp.com/en/nightlife/ios/) — 24
 - [Roma](https://partyyapp.com/discotecas/roma/) · [Rome in English](https://partyyapp.com/en/nightlife/rome/) — 24
-- [Liverpool](https://partyyapp.com/discotecas/liverpool/) · [Liverpool in English](https://partyyapp.com/en/nightlife/liverpool/) — 23
 - [Niza](https://partyyapp.com/discotecas/niza/) · [Nice in English](https://partyyapp.com/en/nightlife/nice/) — 23
+- [Liverpool](https://partyyapp.com/discotecas/liverpool/) · [Liverpool in English](https://partyyapp.com/en/nightlife/liverpool/) — 22
 - [Mykonos](https://partyyapp.com/discotecas/mykonos/) · [Mykonos in English](https://partyyapp.com/en/nightlife/mykonos/) — 22
 - [Rímini y Riccione](https://partyyapp.com/discotecas/rimini-riccione/) · [Rimini & Riccione in English](https://partyyapp.com/en/nightlife/rimini-riccione/) — 20
 - [Hvar](https://partyyapp.com/discotecas/hvar/) · [Hvar in English](https://partyyapp.com/en/nightlife/hvar/) — 18

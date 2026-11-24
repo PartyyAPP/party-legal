@@ -44,6 +44,9 @@
   cards.forEach(function (c) {
     var sched = c.dataset.schedule; if (!sched) return;
     withHours++;
+    // Closed whatever the schedule says: temporarily closed, or summer-only from November to April (as in the app).
+    if (c.dataset.closed === "1") return;
+    if (c.dataset.summer === "1" && (now.getMonth() >= 10 || now.getMonth() <= 3)) return;
     var h = lineFor(sched, night.getDay());
     if (!h || /cerrado/i.test(h)) return;
     var r = ranges(h); if (!r.length) return;
