@@ -4,7 +4,7 @@
 > Party is a free, ad-free app that shows which clubs and bars are open tonight near you, with opening hours, music, crowd age, photos and directions. iPhone and Android, in Spanish and English. Made in Málaga, Spain.
 
 ## Datos / Key facts
-- Locales / Venues: 1569 discotecas y pubs en 59 destinos (788 en 30 destinos de España y 781 en 29 destinos del resto de Europa), a 2026-11-24.
+- Locales / Venues: 1569 discotecas y pubs en 59 destinos (788 en 30 destinos de España y 781 en 29 destinos del resto de Europa), a 2026-11-25.
 - Funciones / Features: lista por cercanía, mapa, filtro «Abierto esta noche», filtros por música, edad del público, tipo de local y distancia; «Voy esta noche» (cuánta gente va) y «¿Cómo está?» (cómo está el local ahora, según quien está allí); favoritos.
 - Precio / Price: gratis, sin anuncios ni compras dentro de la app. No vende entradas. / Free, no ads, no in-app purchases. Does not sell tickets.
 - Cuenta / Account: no hace falta registrarse. / No sign-up needed.
